@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Importing Poppins Font from Google Font. */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* CSS reset */
+
+:root {
+  --bg-color: #1a202c;
+  --white: white;
+  --card-bg: #272a31;
+  --card-text: rgb(182, 179, 179);
+  --black-text: black;
+  --green-color: #219c21;
+  --primary-color: #4f46e5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+  color: var(--bg-color);
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+  object-fit: cover;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+/* Styling Here */
+
+header {
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  color: var(--white);
+}
+
+.main {
+  min-height: 60vh;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+input {
+  padding: 4px;
+  font-family: inherit;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.container {
+  padding: 1rem 0;
+  height: auto;
+}
+
+.container p {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0.3rem;
+  padding: 5px;
+}
+
+.searchresult {
+  margin: 10px 0px;
+}
+
+.emojiname {
+  font-weight: bold;
 }
